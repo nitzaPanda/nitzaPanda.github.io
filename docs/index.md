@@ -25,8 +25,13 @@ for<br>
 
 ### My Contribution
 
-* Selected gas sensor and designed rover and screen display cover
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+* MQ-2 gas sensor:
+  Detecting early fire indicators is critical for wildfire prevention system, where even a small ignition can rapidly escalate into a destructive wildfire. Among    verious gas and smoke options. Created code and calibrated to detect gasses by using ratios.
+  Rs= Sensor resistance when gas is present
+  Ro= Sensor resistance in clean air
+* Design rover and display cover:
+  designed and 3D printed using SolidWorks. 
+   Information like:
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
