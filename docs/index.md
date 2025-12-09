@@ -16,12 +16,11 @@ for<br>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* We were task to help wildfire responders since wildfire has increased over the years. Our TerraGuard is a two board rover with a portable screan that has its own wi-fi to communicate with the rover in real time.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* The rover has BME688(temperature), MQ-2 gas sensor(detects versatile gases), GPS, and motors for mobility. The screen is CrowPanel EP-32-S3 with led to indicate status of the rover's connection and visual awareness if sensors detect changes to the environment. Full detail of project is in the link [team report.](https://egr314-2025-f-315.github.io/phoenixforce.github.io/)
 
 
 ### My Contribution
