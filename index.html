@@ -932,14 +932,11 @@ for<br>
 <strong>Submission: December 08, 2025</strong>
 </center><p></p>
 <h2 id="introduction">Introduction</h2>
-<p>Our team was tasked with assisting wildfire responders, as wildfires have significantly increased in frequency and intensity in recent years. <strong>TerraGuard</strong> is a two-board autonomous rover paired with a portable display screen that creates its own Wi-Fi hotspot, enabling real-time communication with the rover.</p>
+<p>We were task to help wildfire responders since wildfire has increased over the years. Our TerraGuard is a two board rover with a portable screan that has its own wi-fi to communicate with the rover in real time.</p>
 <h3 id="project-summary">Project Summary</h3>
-<p>The rover is equipped with:
-- BME688 (temperature, humidity, pressure, and gas sensor)
-- MQ-2 gas sensor (detects smoke and multiple combustible gases)
-- GPS module
-- DC motors for mobility</p>
-<p>The portable display is a <strong>CrowPanel ESP32-S3</strong> with status LEDs to indicate rover connection and visual alerts when sensors detect environmental changes.</p>
+<ul>
+<li>The rover has BME688(temperature), MQ-2 gas sensor(detects versatile gases), GPS, and motors for mobility. The screen is CrowPanel EP-32-S3 with led to indicate status of the rover's connection and visual awareness if sensors detect changes to the environment.</li>
+</ul>
 <p>Full project details and team report: <a href="https://egr314-2025-f-315.github.io/phoenixforce.github.io/">Phoenix Force Team Report</a></p>
 <h3 id="my-contribution">My Contribution</h3>
 <h4 id="gas-sensor-integration-mq-2">Gas Sensor Integration (MQ-2)</h4>
@@ -966,24 +963,25 @@ For a complete list of materials and components, see the <a href="https://embedd
 - AO output: 0.1–0.3 V (clean air), up to ~4 V at maximum concentration</p>
 <p><a href="https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf">Official MQ-2 Datasheet (PDF)</a></p>
 <h3 id="photos">Photos</h3>
-<table>
-<thead>
-<tr>
-<th>Rover (Front View)</th>
-<th>Rover (Back View)</th>
-<th>Display Screen</th>
-<th>Gas Sensor Setup</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover.png" data-desc-position="bottom"><img alt="Rover Front" src="Rover.png"></a></td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover2.png" data-desc-position="bottom"><img alt="Rover Side" src="Rover2.png"></a></td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Screen.png" data-desc-position="bottom"><img alt="Screen" src="Screen.png"></a></td>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="GAS_sensor.png" data-desc-position="bottom"><img alt="Gas Sensor" src="GAS_sensor.png"></a></td>
-</tr>
-</tbody>
-</table>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 30px 0;">
+  <div style="text-align: center;">
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover.png" data-desc-position="bottom"><img src="Rover.png" alt="Rover - Front View" width="400"></a>
+    <br><strong>Rover (Front View)</strong>
+  </div>
+  <div style="text-align: center;">
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover2.png" data-desc-position="bottom"><img src="Rover2.png" alt="Rover - Side View" width="400"></a>
+    <br><strong>Rover (Side View)</strong>
+  </div>
+  <div style="text-align: center;">
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Screen.png" data-desc-position="bottom"><img src="Screen.png" alt="Portable Display Screen" width="400"></a>
+    <br><strong>Portable Display Screen</strong>
+  </div>
+  <div style="text-align: center;">
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="GAS_sensor.png" data-desc-position="bottom"><img src="GAS_sensor.png" alt="MQ-2 Gas Sensor Setup" width="400"></a>
+    <br><strong>MQ-2 Gas Sensor Integration</strong>
+  </div>
+</div>
+
 <hr>
 <p><em>EGR 314 – Embedded Systems Design | Fall 2025 | Team 315 – Phoenix Force</em></p>
 
