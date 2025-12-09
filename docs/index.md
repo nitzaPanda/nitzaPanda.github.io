@@ -31,7 +31,6 @@ for<br>
   Ro= Sensor resistance in clean air
 * Design rover and display cover:
   designed and 3D printed using SolidWorks. 
-   Information like:
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
