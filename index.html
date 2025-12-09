@@ -456,12 +456,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="My Contribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gas-sensor-integration-mq-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gas Sensor Integration (MQ-2)
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#individual-assignment" class="md-nav__link">
+  <a href="#rover-chassis-display-cover-design" class="md-nav__link">
     <span class="md-ellipsis">
-      IndividuaL Assignment
+      Rover Chassis &amp; Display Cover Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual-assignment-component-selection-mq-2-smokegas-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Individual Assignment – Component Selection: MQ-2 Smoke/Gas Sensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photos
     </span>
   </a>
   
@@ -816,12 +849,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="My Contribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gas-sensor-integration-mq-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gas Sensor Integration (MQ-2)
+    </span>
+  </a>
+  
 </li>
         
           <li class="md-nav__item">
-  <a href="#individual-assignment" class="md-nav__link">
+  <a href="#rover-chassis-display-cover-design" class="md-nav__link">
     <span class="md-ellipsis">
-      IndividuaL Assignment
+      Rover Chassis &amp; Display Cover Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#individual-assignment-component-selection-mq-2-smokegas-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Individual Assignment – Component Selection: MQ-2 Smoke/Gas Sensor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photos
     </span>
   </a>
   
@@ -860,40 +926,66 @@
 <p></p><center>
 <font size="6">Danitza Datasheet</font><br>
 as part of<br>
-<font size="8"> Phoenix Force</font><br>
+<font size="8"><b>Phoenix Force</b></font><br>
 for<br>
-<font size="5"> Team 315 </font><br><p></p>
-<p><strong>Submission: 12, 08, 2025</strong>
-</p></center><p></p>
+<font size="5"><b>Team 315</b></font><br>
+<strong>Submission: December 08, 2025</strong>
+</center><p></p>
 <h2 id="introduction">Introduction</h2>
-<ul>
-<li>We were task to help wildfire responders since wildfire has increased over the years. Our TerraGuard is a two board rover with a portable screan that has its own wi-fi to communicate with the rover in real time.</li>
-</ul>
+<p>Our team was tasked with assisting wildfire responders, as wildfires have significantly increased in frequency and intensity in recent years. <strong>TerraGuard</strong> is a two-board autonomous rover paired with a portable display screen that creates its own Wi-Fi hotspot, enabling real-time communication with the rover.</p>
 <h3 id="project-summary">Project Summary</h3>
-<ul>
-<li>The rover has BME688(temperature), MQ-2 gas sensor(detects versatile gases), GPS, and motors for mobility. The screen is CrowPanel EP-32-S3 with led to indicate status of the rover's connection and visual awareness if sensors detect changes to the environment. Full detail of project is in the link <a href="https://egr314-2025-f-315.github.io/phoenixforce.github.io/">team report.</a></li>
-</ul>
+<p>The rover is equipped with:
+- BME688 (temperature, humidity, pressure, and gas sensor)
+- MQ-2 gas sensor (detects smoke and multiple combustible gases)
+- GPS module
+- DC motors for mobility</p>
+<p>The portable display is a <strong>CrowPanel ESP32-S3</strong> with status LEDs to indicate rover connection and visual alerts when sensors detect environmental changes.</p>
+<p>Full project details and team report: <a href="https://egr314-2025-f-315.github.io/phoenixforce.github.io/">Phoenix Force Team Report</a></p>
 <h3 id="my-contribution">My Contribution</h3>
+<h4 id="gas-sensor-integration-mq-2">Gas Sensor Integration (MQ-2)</h4>
+<p>Early detection of fire indicators is critical for wildfire prevention. Even small ignitions can rapidly escalate into large-scale fires.<br>
+I selected the MQ-2 sensor for its ability to detect a wide range of combustible gases and smoke. I developed and calibrated the detection code using the Rs/Ro ratio method:</p>
 <ul>
-<li>Gas Sensor:
-  Detecting early fire indicators is critical for wildfire prevention system, where even a small ignition can rapidly escalate into a destructive wildfire.          Carefully selected sensor that is able to read verious gases and smoke options. Created code and calibrated to detect gasses by using ratios.
-  Rs= Sensor resistance when gas is present
-  Ro= Sensor resistance in clean air</li>
-<li>Design rover and display cover:
-  designed and 3D printed using SolidWorks. </li>
+<li><strong>Rs</strong> = Sensor resistance in the presence of target gas  </li>
+<li><strong>Ro</strong> = Sensor resistance in clean air  </li>
 </ul>
-<p>To review the details listed of the material used to construct the subsection, you can review it in the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">"BOM"</a> section of the datasheet.</p>
-<h3 id="individual-assignment">IndividuaL Assignment</h3>
-<ul>
-<li>Component  Selection:
- MQ-2 Sensor Detection has high-quality dual-panel design, with power indicator. TTL output valid signal is Low-level signal when the output light can be directly connected to the microcontroller. Analog output funtions with higher concentration of higher voltage. Sensor does need to be powered in advance because of the internal heat box needs to be warmed up and have stable data reading.</li>
-</ul>
-<p>Total of 4 Pins:</p>
-<p>Input voltage : DC5V Power consumption ( current ): 150mA</p>
-<p>DO output : TTL digital 0 and 1 ( 0.1 and 5V)</p>
-<p>AO output :0.1-0 .3 V ( relative to pollution ) , the maximum concentration of a voltage of about 4V</p>
-<p>Ground : power supply is negative</p>
-<p><a href="https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf">"DATASHEET"</a></p>
+<p>This ratio-based approach provides reliable gas concentration readings.</p>
+<h4 id="rover-chassis-display-cover-design">Rover Chassis &amp; Display Cover Design</h4>
+<p>Designed and 3D-printed the rover chassis and display protective cover using SolidWorks.<br>
+For a complete list of materials and components, see the <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/">"Bill of Materials (BOM)"</a> section.</p>
+<h3 id="individual-assignment-component-selection-mq-2-smokegas-sensor">Individual Assignment – Component Selection: MQ-2 Smoke/Gas Sensor</h3>
+<p><strong>Key Features:</strong>
+- High-quality dual-panel design with power and status indicators
+- TTL digital output (LOW when gas detected) – can be directly connected to a microcontroller
+- Analog output (0.1–4 V) proportional to gas concentration
+- Requires pre-heating (~60 seconds) for stable readings due to internal heating element</p>
+<p><strong>Specifications:</strong>
+- Input voltage: DC 5V
+- Power consumption: ~150 mA
+- DO output: TTL digital 0 and 1 (0.1V / 5V)
+- AO output: 0.1–0.3 V (clean air), up to ~4 V at maximum concentration</p>
+<p><a href="https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf">Official MQ-2 Datasheet (PDF)</a></p>
+<h3 id="photos">Photos</h3>
+<table>
+<thead>
+<tr>
+<th>Rover (Front View)</th>
+<th>Rover (Back View)</th>
+<th>Display Screen</th>
+<th>Gas Sensor Setup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover.png" data-desc-position="bottom"><img alt="Rover Front" src="Rover.png"></a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Rover2.png" data-desc-position="bottom"><img alt="Rover Side" src="Rover2.png"></a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Screen.png" data-desc-position="bottom"><img alt="Screen" src="Screen.png"></a></td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="GAS_sensor.png" data-desc-position="bottom"><img alt="Gas Sensor" src="GAS_sensor.png"></a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>EGR 314 – Embedded Systems Design | Fall 2025 | Team 315 – Phoenix Force</em></p>
 
 
 
