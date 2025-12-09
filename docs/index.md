@@ -34,9 +34,9 @@ for<br>
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
-### IndividiaL Assignment
+### IndividuaL Assignment
 
-*Component  Selection:
+* Component  Selection:
  MQ-2 Sensor Detection has high-quality dual-panel design, with power indicator. TTL output valid signal is Low-level signal when the output light can be directly connected to the microcontroller. Analog output funtions with higher concentration of higher voltage. Sensor does need to be powered in advance because of the internal heat box needs to be warmed up and have stable data reading.
 
 Total of 4 Pins:
