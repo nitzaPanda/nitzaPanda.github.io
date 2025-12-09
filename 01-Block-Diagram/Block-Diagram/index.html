@@ -26,7 +26,7 @@
 
     
       
-        <title>Individal Block Diagram - EGR 304 Data Sheet Template</title>
+        <title>Individual Subsystem Block Diagram – Gas Sensor - EGR 304 Data Sheet Template</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#gas-sensor-subsystem-block-diagram-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individal Block Diagram
+              Individual Subsystem Block Diagram – Gas Sensor
             
           </span>
         </div>
@@ -466,12 +466,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Individual Subsystem Block Diagram – Gas Sensor
   </span>
   
 
@@ -482,7 +484,7 @@
         
   
   <span class="md-ellipsis">
-    Individal Block Diagram
+    Individual Subsystem Block Diagram – Gas Sensor
   </span>
   
 
@@ -494,6 +496,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -502,18 +506,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Key Features
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#main-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Main Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Distribution
     </span>
   </a>
   
@@ -792,6 +805,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -800,18 +815,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Key Features
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#main-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Main Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Distribution
     </span>
   </a>
   
@@ -840,21 +864,70 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
-
-<h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Example of Indivial Block diagram " src="../individual-block-diagram.png"></a></p>
+<h1 id="gas-sensor-subsystem-block-diagram-overview">Gas Sensor Subsystem – Block Diagram Overview</h1>
+<p>This document describes the hardware architecture of the battery-powered wireless gas sensing node used in our project.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../block_diagram.png" data-desc-position="bottom"><img alt="Gas Sensor Subsystem Block Diagram" src="../block_diagram.png"></a></p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Fully wireless (Wi-Fi + Bluetooth) operation  </li>
+<li>Integrated GPS for geolocation  </li>
+<li>Local OLED display for real-time readings  </li>
+<li>Long battery life using efficient power conversion  </li>
+<li>Expandable via upstream/downstream connectors  </li>
+</ul>
+<h2 id="main-components">Main Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Key Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microcontroller</strong></td>
+<td>ESP32-S2 (or ESP32-S3 variant)</td>
+<td>Wi-Fi/BLE, ADC, UART, GPIO control</td>
+</tr>
+<tr>
+<td><strong>Gas Sensor</strong></td>
+<td>Multi-gas sensor module (PN: 701715455504)</td>
+<td>Analog output, 5V heater + 3.3V logic</td>
+</tr>
+<tr>
+<td><strong>Wireless</strong></td>
+<td>Built-in ESP32 radio + external antenna</td>
+<td>u.FL connector for improved range</td>
+</tr>
+<tr>
+<td><strong>GPS Module</strong></td>
+<td>u-blox NEO-6M</td>
+<td>UART interface, 5V/3.3V compatible</td>
+</tr>
+<tr>
+<td><strong>Display</strong></td>
+<td>Integrated OLED screen (likely 0.96" or 1.3" SSD1306/SH1106)</td>
+<td>Driven directly by ESP32</td>
+</tr>
+<tr>
+<td><strong>Power Supply</strong></td>
+<td>Single-cell LiPo/Li-ion battery (3.7–4.2 V) → DC/DC converters</td>
+<td>Outputs: regulated 5V and 3.3V rails</td>
+</tr>
+<tr>
+<td><strong>Connectors</strong></td>
+<td>2× 8-pin (4x2) headers + battery connector</td>
+<td>Upstream/downstream chaining, debug</td>
+</tr>
+</tbody>
+</table>
+<h2 id="power-distribution">Power Distribution</h2>
+<p>```mermaid
+graph TD
+    A[LiPo Battery<br>3.7–4.2V] --&gt; B[Voltage Regulator]
+    B --&gt; C[5V Rail<br>Gas sensor heater, GPS]
+    B --&gt; D[3.3V Rail<br>ESP32, Sensor logic,<br>Display, GPS logic]</p>
 
 
 
