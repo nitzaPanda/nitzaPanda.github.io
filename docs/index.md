@@ -15,16 +15,9 @@ for<br>
 </center>
 
 ## Introduction
-Our team was tasked with assisting wildfire responders, as wildfires have significantly increased in frequency and intensity in recent years. **TerraGuard** is a two-board autonomous rover paired with a portable display screen that creates its own Wi-Fi hotspot, enabling real-time communication with the rover.
-
+We were task to help wildfire responders since wildfire has increased over the years. Our TerraGuard is a two board rover with a portable screan that has its own wi-fi to communicate with the rover in real time.
 ### Project Summary
-The rover is equipped with:
-- BME688 (temperature, humidity, pressure, and gas sensor)
-- MQ-2 gas sensor (detects smoke and multiple combustible gases)
-- GPS module
-- DC motors for mobility
-
-The portable display is a **CrowPanel ESP32-S3** with status LEDs to indicate rover connection and visual alerts when sensors detect environmental changes.
+* The rover has BME688(temperature), MQ-2 gas sensor(detects versatile gases), GPS, and motors for mobility. The screen is CrowPanel EP-32-S3 with led to indicate status of the rover's connection and visual awareness if sensors detect changes to the environment.
 
 Full project details and team report: [Phoenix Force Team Report](https://egr314-2025-f-315.github.io/phoenixforce.github.io/)
 
@@ -60,9 +53,24 @@ For a complete list of materials and components, see the ["Bill of Materials (BO
 
 ### Photos
 
-| Rover (Front View) | Rover (Back View) | Display Screen | Gas Sensor Setup |
-|--------------------|-------------------|----------------|------------------|
-| ![Rover Front](Rover.png) | ![Rover Side](Rover2.png) | ![Screen](Screen.png) | ![Gas Sensor](GAS_sensor.png) |
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 30px 0;">
+  <div style="text-align: center;">
+    <img src="Rover.png" alt="Rover - Front View" width="400"/>
+    <br><strong>Rover (Front View)</strong>
+  </div>
+  <div style="text-align: center;">
+    <img src="Rover2.png" alt="Rover - Side View" width="400"/>
+    <br><strong>Rover (Side View)</strong>
+  </div>
+  <div style="text-align: center;">
+    <img src="Screen.png" alt="Portable Display Screen" width="400"/>
+    <br><strong>Portable Display Screen</strong>
+  </div>
+  <div style="text-align: center;">
+    <img src="GAS_sensor.png" alt="MQ-2 Gas Sensor Setup" width="400"/>
+    <br><strong>MQ-2 Gas Sensor Integration</strong>
+  </div>
+</div>
 
 ---
 *EGR 314 – Embedded Systems Design | Fall 2025 | Team 315 – Phoenix Force*
