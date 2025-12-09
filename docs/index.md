@@ -25,8 +25,8 @@ for<br>
 
 ### My Contribution
 
-* MQ-2 gas sensor:
-  Detecting early fire indicators is critical for wildfire prevention system, where even a small ignition can rapidly escalate into a destructive wildfire. Among    verious gas and smoke options. Created code and calibrated to detect gasses by using ratios.
+* Gas Sensor:
+  Detecting early fire indicators is critical for wildfire prevention system, where even a small ignition can rapidly escalate into a destructive wildfire.          Carefully selected sensor that is able to read verious gases and smoke options. Created code and calibrated to detect gasses by using ratios.
   Rs= Sensor resistance when gas is present
   Ro= Sensor resistance in clean air
 * Design rover and display cover:
@@ -34,4 +34,21 @@ for<br>
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
-For all the sections
+### IndividiaL Assignment
+
+*Component  Selection:
+ MQ-2 Sensor Detection has high-quality dual-panel design, with power indicator. TTL output valid signal is Low-level signal when the output light can be directly connected to the microcontroller. Analog output funtions with higher concentration of higher voltage. Sensor does need to be powered in advance because of the internal heat box needs to be warmed up and have stable data reading.
+
+Total of 4 Pins:
+
+Input voltage : DC5V Power consumption ( current ): 150mA
+
+DO output : TTL digital 0 and 1 ( 0.1 and 5V)
+
+AO output :0.1-0 .3 V ( relative to pollution ) , the maximum concentration of a voltage of about 4V
+
+Ground : power supply is negative
+
+["DATASHEET"](https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf)
+
+
