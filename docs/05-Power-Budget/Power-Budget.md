@@ -3,20 +3,13 @@ title: Power Budget
 ---
 
 ## Overview
-Write a overview of what you did and why you did a Power Budget.
+After selection all of our components it was split into two power source according to its datasheet. Gas Senor needed to be powered with 3.3V power rail. After adding all the components we added voltage regulator that best fit for each rail.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
+![budget1](Power_Budget_1.png){style width:"350" height:"300;"}
 
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
+![budget2](Power_Budget_2.png){style width:"350" height:"300;"}
 
 ## Conclusions
 
-From the prepare Power Budget, .....
-
-## Resouces
-
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+A power budget is vital in embedded systems because it keeps all components operating within available power limits (important for battery-powered devices), guides the choice of low-power hardware such as efficient MCUs and regulators, supports design optimization through techniques like sleep modes and duty cycling, and ensures that the power supply is properly sized—avoiding over-design while maintaining performance and extending system lifetime. 
