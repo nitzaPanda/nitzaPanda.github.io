@@ -1,12 +1,11 @@
 ---
 title: Bill of Materials
 tags:
-- tag1
-- tag2
+- MQ-2
 ---
 
 ## Overview
-written context
+ordered a bundle just incase if sensor malfunctioned during testing.
 
 ## Bill of Materials Table
 
@@ -20,7 +19,7 @@ written context
 * You could also import your BOM via a screenshot of the spreadsheet created BOM
 
 ## Bill of Materials Photo
-![](BOM-Screenshot.png){style width: "2000"}
+![](BOM.png){style width: "2000"}
 **Figure 2:** Bill of Materials as a screenshot.
 
 
