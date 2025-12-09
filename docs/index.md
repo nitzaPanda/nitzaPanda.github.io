@@ -1,54 +1,68 @@
 ---
 title: Welcome
 tags:
-- tag1
-- tag2
+  - tag1
+  - tag2
 ---
-<center>
-<font size= "6">Danitza Datasheet</font><br>
-as part of<br>
-<font size= "8"> Phoenix Force</font><br>
-for<br>
-<font size= "5"> Team 315 </font><br>
 
-**Submission: 12, 08, 2025**
+<center>
+<font size="6">Danitza Datasheet</font><br>
+as part of<br>
+<font size="8"><b>Phoenix Force</b></font><br>
+for<br>
+<font size="5"><b>Team 315</b></font><br>
+<strong>Submission: December 08, 2025</strong>
 </center>
 
 ## Introduction
-
-* We were task to help wildfire responders since wildfire has increased over the years. Our TerraGuard is a two board rover with a portable screan that has its own wi-fi to communicate with the rover in real time.
+Our team was tasked with assisting wildfire responders, as wildfires have significantly increased in frequency and intensity in recent years. **TerraGuard** is a two-board autonomous rover paired with a portable display screen that creates its own Wi-Fi hotspot, enabling real-time communication with the rover.
 
 ### Project Summary
+The rover is equipped with:
+- BME688 (temperature, humidity, pressure, and gas sensor)
+- MQ-2 gas sensor (detects smoke and multiple combustible gases)
+- GPS module
+- DC motors for mobility
 
-* The rover has BME688(temperature), MQ-2 gas sensor(detects versatile gases), GPS, and motors for mobility. The screen is CrowPanel EP-32-S3 with led to indicate status of the rover's connection and visual awareness if sensors detect changes to the environment. Full detail of project is in the link [team report.](https://egr314-2025-f-315.github.io/phoenixforce.github.io/)
+The portable display is a **CrowPanel ESP32-S3** with status LEDs to indicate rover connection and visual alerts when sensors detect environmental changes.
 
+Full project details and team report: [Phoenix Force Team Report](https://egr314-2025-f-315.github.io/phoenixforce.github.io/)
 
 ### My Contribution
 
-* Gas Sensor:
-  Detecting early fire indicators is critical for wildfire prevention system, where even a small ignition can rapidly escalate into a destructive wildfire.          Carefully selected sensor that is able to read verious gases and smoke options. Created code and calibrated to detect gasses by using ratios.
-  Rs= Sensor resistance when gas is present
-  Ro= Sensor resistance in clean air
-* Design rover and display cover:
-  designed and 3D printed using SolidWorks. 
+#### Gas Sensor Integration (MQ-2)
+Early detection of fire indicators is critical for wildfire prevention. Even small ignitions can rapidly escalate into large-scale fires.  
+I selected the MQ-2 sensor for its ability to detect a wide range of combustible gases and smoke. I developed and calibrated the detection code using the Rs/Ro ratio method:
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+- **Rs** = Sensor resistance in the presence of target gas  
+- **Ro** = Sensor resistance in clean air  
 
-### IndividuaL Assignment
+This ratio-based approach provides reliable gas concentration readings.
 
-* Component  Selection:
- MQ-2 Sensor Detection has high-quality dual-panel design, with power indicator. TTL output valid signal is Low-level signal when the output light can be directly connected to the microcontroller. Analog output funtions with higher concentration of higher voltage. Sensor does need to be powered in advance because of the internal heat box needs to be warmed up and have stable data reading.
+#### Rover Chassis & Display Cover Design
+Designed and 3D-printed the rover chassis and display protective cover using SolidWorks.  
+For a complete list of materials and components, see the ["Bill of Materials (BOM)"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section.
 
-Total of 4 Pins:
+### Individual Assignment – Component Selection: MQ-2 Smoke/Gas Sensor
+**Key Features:**
+- High-quality dual-panel design with power and status indicators
+- TTL digital output (LOW when gas detected) – can be directly connected to a microcontroller
+- Analog output (0.1–4 V) proportional to gas concentration
+- Requires pre-heating (~60 seconds) for stable readings due to internal heating element
 
-Input voltage : DC5V Power consumption ( current ): 150mA
+**Specifications:**
+- Input voltage: DC 5V
+- Power consumption: ~150 mA
+- DO output: TTL digital 0 and 1 (0.1V / 5V)
+- AO output: 0.1–0.3 V (clean air), up to ~4 V at maximum concentration
 
-DO output : TTL digital 0 and 1 ( 0.1 and 5V)
+[Official MQ-2 Datasheet (PDF)](https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf)
 
-AO output :0.1-0 .3 V ( relative to pollution ) , the maximum concentration of a voltage of about 4V
+### Photos
 
-Ground : power supply is negative
+| Rover (Front View) | Rover (Back View) | Display Screen | Gas Sensor Setup |
+|--------------------|-------------------|----------------|------------------|
+| ![Rover Front](Rover.png) | ![Rover Side](Rover2.png) | ![Screen](Screen.png) | ![Gas Sensor](GAS_sensor.png) |
 
-["DATASHEET"](https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf)
-
-
+---
+*EGR 314 – Embedded Systems Design | Fall 2025 | Team 315 – Phoenix Force*
