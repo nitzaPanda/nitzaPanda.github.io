@@ -523,15 +523,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#power-distribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Distribution
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -832,15 +823,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#power-distribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Power Distribution
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -865,7 +847,7 @@
 
 
 <h1 id="gas-sensor-subsystem-block-diagram-overview">Gas Sensor Subsystem – Block Diagram Overview</h1>
-<p>This document describes the hardware architecture of the battery-powered wireless gas sensing node used in our project.</p>
+<p>This document describes the hardware connection of gas sensing node used in our project.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../block_diagram.png" data-desc-position="bottom"><img alt="Gas Sensor Subsystem Block Diagram" src="../block_diagram.png"></a></p>
 <h2 id="key-features">Key Features</h2>
 <ul>
@@ -902,7 +884,7 @@
 </tr>
 <tr>
 <td><strong>GPS Module</strong></td>
-<td>u-blox NEO-6M</td>
+<td>NEO-6M</td>
 <td>UART interface, 5V/3.3V compatible</td>
 </tr>
 <tr>
@@ -922,12 +904,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="power-distribution">Power Distribution</h2>
-<p>```mermaid
-graph TD
-    A[LiPo Battery<br>3.7–4.2V] --&gt; B[Voltage Regulator]
-    B --&gt; C[5V Rail<br>Gas sensor heater, GPS]
-    B --&gt; D[3.3V Rail<br>ESP32, Sensor logic,<br>Display, GPS logic]</p>
 
 
 
