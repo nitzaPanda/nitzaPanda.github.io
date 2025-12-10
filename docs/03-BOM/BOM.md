@@ -16,7 +16,6 @@ ordered a bundle just incase if sensor malfunctioned during testing.
 
 
 
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
 
 ## Bill of Materials Photo
 ![](BOM.png){style width: "2000"}
