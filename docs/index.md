@@ -55,6 +55,10 @@ The rover chassis and display cover were modeled in SolidWorks and manufactured 
 
 [Official MQ-2 Datasheet (PDF)](https://cdn.sparkfun.com/assets/3/b/0/6/d/MQ-2.pdf)
 
+### My PCB Design
 
+![Front](stylesheets/GAS_sensor.png)
+
+![3D View](stylesheets/PCB.png)
 ---
 *EGR 314 – Embedded Systems Design | Fall 2025 | Team 315 – Phoenix Force*
